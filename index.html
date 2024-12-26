@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Diary</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">My Daily Life Diary</h1>
+        <button id="toggle-theme" class="btn btn-secondary mb-4">Switch to Dark Mode</button>
+        <div class="entry-section mb-4">
+            <textarea id="diary-entry" class="form-control mb-2" placeholder="Write your diary entry here..." rows="10" maxlength="500"></textarea>
+            <div id="char-counter" class="text-muted mb-2">0/500</div>
+            <button id="save-entry" class="btn btn-primary">Save Entry</button>
+        </div>
+        <div id="entries">
+            <h2 class="mb-4">Your Previous Entries:</h2>
+            <input type="text" id="search-input" class="form-control mb-4" placeholder="Search entries...">
+            <ul id="folder-list" class="list-group"></ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+#char-counter {
+    font-size: 0.9rem;
+}
+
+#folder-list li {
+    margin-bottom: 10px;
+}
+
+.entry-list li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.entry-list li p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    max-height: 3.6em; /* Limit to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.entry-list li p.expanded {
+    max-height: none;
+    white-space: normal;
+}
+
+.entry-list li span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.entry-list li .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.entry-list li button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.entry-list li button.edit {
+    color: #007BFF;
+}
+
+.entry-list li button.delete {
+    color: #FF5733;
+}
+
+.entry-list li button.favorite {
+    color: #FFD700;
+}
+
+.entry-list li button.read-more {
+    color: #007BFF;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+body.dark-mode .entry-list li {
+    background-color: #444;
+}
+
+body.dark-mode .entry-list li button {
+    color: #f0f0f0;
+}
